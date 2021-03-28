@@ -31,8 +31,8 @@ def swap(request):
     f.close
     #token_in = int(token_in)
     #subprocess.run(['cd apps/pinatelonline'])
-    subprocess.run(["node", "index.js", token_in])
-    time.sleep(5)
+    subprocess.run(["node", "myfirst/apps/pinatelonline/index.js", token_in])
+    #time.sleep(5)
     f1 = open("myfirst/apps/pinatelonline/out.txt", 'r')
     out = f1.read()
     f1.close()

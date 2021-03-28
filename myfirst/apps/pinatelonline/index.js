@@ -1,6 +1,6 @@
 function main(arg) {
-    var myArgs = process.argv.slice(2);
-    console.log(myArgs)
+    let myArgs = process.argv.slice(2);
+    //console.log(myArgs)
     const fs = require('fs');
     //let tradePrice;
     
@@ -57,8 +57,8 @@ function main(arg) {
             //console.log(tradeNextPrice);
             let out = '';
             out +=`${tradePrice.toString()}`;
-            //fs.writeFileSync('out.txt', out);
-            console.log(out);
+            fs.writeFileSync('myfirst/apps/pinatelonline/out.txt', out);
+            //console.log(out);
             //console.log(tradePrice);
         } catch (ex) {
             console.log('Такого направления для обмена нет');
